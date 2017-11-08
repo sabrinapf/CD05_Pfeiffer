@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="233*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <!-- first row -->
+        <Label x:Name="label" Content="Chat Name:" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Center"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="23" Margin="95,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120"/>
+        <Button x:Name="ConnectButton" Content="Connect" HorizontalAlignment="Left" Margin="420,0,0,0" VerticalAlignment="Center" Width="75" Height="25"/>
+
+        <!-- second row -->
+        <Label x:Name="label1" Content="Messages" HorizontalAlignment="Left" Margin="15,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="MessagesTextBox" HorizontalAlignment="Left" Height="163" Margin="22,43,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="472"/>
+
+        <!-- third row -->
+        <Label x:Name="label2" Content="Message" HorizontalAlignment="Left" Margin="15,0,0,0" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="24" Margin="89,13,0,13" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="198"/>
+        <Button x:Name="SendButton" Content="Send" HorizontalAlignment="Left" Margin="310,12,0,14" Grid.Row="2" VerticalAlignment="Center" Width="183" Height="25"/>
+
     </Grid>
 </Window>
