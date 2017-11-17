@@ -1,0 +1,38 @@
+﻿<Window x:Class="CD05_Pfeiffer_Server.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CD05_Pfeiffer_Server"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="281*"/>
+        </Grid.RowDefinitions>
+
+        <!-- buttons (top) -->
+        <Button x:Name="Stop" Content="Stop" Grid.Column="1" HorizontalAlignment="Left" Margin="217,9,0,9" VerticalAlignment="Center" Width="75" Height="20"/>
+        <Button x:Name="Start" Content="Start" Grid.Column="1" HorizontalAlignment="Left" Margin="136,9,0,9" VerticalAlignment="Center" Width="75" Height="20"/>
+
+        <!-- left side -->
+        <Label x:Name="label" Content="Connected Users:" HorizontalAlignment="Left" Margin="15,15,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="102"/>
+        <ListBox x:Name="ConnectedUserListBox" HorizontalAlignment="Center" Height="199" Margin="14,40,13,0" Grid.Row="1" VerticalAlignment="Top" Width="180"/>
+
+        <!-- right side -->
+        <Label x:Name="label1" Content="Received Messages:" Grid.Column="1" HorizontalAlignment="Left" Margin="15,15,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="115"/>
+        <TextBlock x:Name="MessageCounter" Grid.Column="1" HorizontalAlignment="Left" Margin="135,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="16" Width="58"/>
+        <ListBox x:Name="ReceivedMessagesListBox" Grid.Column="1" HorizontalAlignment="Center" Height="200" Margin="15,40,15,0" Grid.Row="1" VerticalAlignment="Top" Width="280"/>
+        <Button x:Name="SaveToLogButton" Content="Save to log" Grid.Column="1" HorizontalAlignment="Center" Margin="15,249,15,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Height="20"/>
+        <Button x:Name="DropButton" Content="Drop" Grid.Column="0"  HorizontalAlignment="Center" Margin="14,249,13,0" Grid.Row="1" VerticalAlignment="Top" Width="180" Height="20"/>
+
+
+
+
+    </Grid>
+</Window>
